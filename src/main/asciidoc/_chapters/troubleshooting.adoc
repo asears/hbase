@@ -778,6 +778,14 @@ For example...
 ----
 hadoop fs -dus /hbase/
 ----
+
+or
+
+[source,bourne]
+----
+hdfs dfs -du -s /apps/hbase/
+----
+
 ...returns the summarized disk utilization for all HBase objects.
 
 
@@ -785,6 +793,14 @@ hadoop fs -dus /hbase/
 ----
 hadoop fs -dus /hbase/myTable
 ----
+
+or
+
+[source,bourne]
+----
+hdfs dfs -du -s /apps/hbase/myTable
+----
+
 ...returns the summarized disk utilization for the HBase table 'myTable'.
 
 
@@ -792,6 +808,14 @@ hadoop fs -dus /hbase/myTable
 ----
 hadoop fs -du /hbase/myTable
 ----
+
+or
+
+[source,bourne]
+----
+hdfs dfs -du -s /apps/hbase/myTable
+----
+
 ...returns a list of the regions under the HBase table 'myTable' and their disk utilization.
 
 For more information on HDFS shell commands, see the link:http://hadoop.apache.org/common/docs/current/file_system_shell.html[HDFS FileSystem Shell documentation].
